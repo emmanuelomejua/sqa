@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CodeChurn = () => {
+const MTBF = () => {
   return (
     <div>
       Code Churn
@@ -8,4 +8,4 @@ const CodeChurn = () => {
   )
 }
 
-export default CodeChurn
+export default MTBF

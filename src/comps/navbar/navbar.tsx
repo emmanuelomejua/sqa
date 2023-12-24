@@ -2,9 +2,9 @@ import './navbar.scss'
 
 const navbar = () => {
   return (
-    <div>
+    <nav className='navbar'>
       Navbar
-    </div>
+    </nav>
   )
 }
 

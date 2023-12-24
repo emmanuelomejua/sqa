@@ -3,24 +3,23 @@ import './app.scss';
 import { Navbar, Footer, Sidebar } from './comps';
 import { Outlet, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Home, Login } from './pages';
+import { Availability, CSAT, CodeChurn, CrashRate, DefectDensity, MTBF, MTTR } from './pages/others';
 
 
 const Layout = () => {
   return(
-    <main className='app_main'>
-      <section className='app_mainCont'>
-        <Navbar/>
-        <section className='app_cont'>
-          <section>
-            <Sidebar/>
-          </section>
-          <section>
-            <Outlet/>
-          </section>
-        </section>
-        <Footer/>
+    <section className='app'>
+    <Navbar/>
+    <section  className='app_cont'>
+      <section className='app__sidebar'>
+      <Sidebar/>
       </section>
-    </main>
+      <section className='app_container'>
+      <Outlet/>
+      <Footer/>
+      </section>
+    </section>
+  </section>
   )
 }
 
@@ -33,7 +32,35 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home/>
-      }
+      },
+      {
+        path: '/availability',
+        element: <Availability/>
+      },
+      {
+        path: '/csat',
+        element: <CSAT/>
+      },
+      {
+        path: '/crashrate',
+        element: <CrashRate/>
+      },
+      {
+        path: '/codechurn',
+        element: <CodeChurn/>
+      },
+      {
+        path: '/ddensity',
+        element: <DefectDensity/>
+      },
+      {
+        path: '/mtbf',
+        element: <MTBF/>
+      },
+      {
+        path: '/mttr',
+        element: <MTTR/>
+      },
     ]
   },
   {
