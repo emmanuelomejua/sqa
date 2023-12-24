@@ -1,7 +1,16 @@
 .sidebar{
-    height: 100%;
+    height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border-right: 1px solid gray;
     padding: 10px;
+}
+
+.s-top{
+
+}
+
+.s-bottom{
+    margin-bottom: 10px;
 }

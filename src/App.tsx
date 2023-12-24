@@ -3,7 +3,7 @@ import './app.scss';
 import { Navbar, Footer, Sidebar } from './comps';
 import { Outlet, createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Home, Login } from './pages';
-import { Availability, CSAT, CodeChurn, CrashRate, DefectDensity, MTBF, MTTR } from './pages/others';
+import { Availability, CSAT, CodeChurn, CrashRate, DefectDensity, MTBF, MTTR, MTTD } from './pages/others';
 
 
 const Layout = () => {
@@ -51,6 +51,14 @@ const router = createBrowserRouter([
       },
       {
         path: '/ddensity',
+        element: <DefectDensity/>
+      },
+      {
+        path: '/mttd',
+        element: <MTTD/>
+      },
+      {
+        path: '/ccoverage',
         element: <DefectDensity/>
       },
       {
