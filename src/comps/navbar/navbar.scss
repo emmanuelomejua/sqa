@@ -1,12 +1,42 @@
 .navbar{
-    height: 60px;
-    // border-bottom: 1px solid #03063b;
-    border-bottom: 1px solid #fff;
+    height: 70px;
+    border-bottom: 1px solid #504a4a;
 }
 
 .navbar-cont{
     display: flex;
+    align-items: center;
     padding: 10px;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.navbar-left{
+    flex: 1;
+    display: flex;
+}
+
+.navbar-left > img{
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 4;
+}
+
+.navbar-right > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.n-img{
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
 }
