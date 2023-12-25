@@ -11,8 +11,8 @@ const MTBF = () => {
         q3='How quickly are issues resolved once detected?'
       />
       <Inputs
-        text1=''
-        text2=''
+        text1='Total hours in a month'
+        text2='No of Failures Observed'
       />
     </div>
   )

@@ -1,5 +1,5 @@
 import './style.scss'
-import { Inputs, Question, Text } from '../../comps'
+import { Input1, Question, Text } from '../../comps'
 
 const MTTR = () => {
   return (
@@ -10,9 +10,8 @@ const MTTR = () => {
         q2='Are there specific challenges or bottleneck in the resolution process?'
         q3='Do downtime often occur during resolution?'
       />
-      <Inputs
-        text1=''
-        text2=''
+      <Input1
+        text='Time Taken to Resolve Issues'
       />
     </div>
   )

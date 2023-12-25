@@ -1,4 +1,4 @@
-.inputs{
+.inputs, .input1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,9 +13,11 @@
 
         input{
             outline: none;
-            padding: 5px 10px;
+            padding: 6px 13px;
             background-color: #03063b;
             color: inherit;
+            border-radius: 5px;
+
         }
     }
 

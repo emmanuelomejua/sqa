@@ -11,8 +11,8 @@ const CodeCoverage = () => {
         q3='Are numerous tools required to ensure comprehensive code coverage?'
       />
       <Inputs
-        text1=''
-        text2=''
+        text1='LOC covered by unit tests'
+        text2='Total Lines of Code'
       />
     </div>
   )

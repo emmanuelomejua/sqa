@@ -12,8 +12,8 @@ const CrashRate: React.FC = () => {
         q3=' How severe is the impact of crashes on your experience?'
       />
       <Inputs
-        text1=''
-        text2=''
+        text1='Total User session'
+        text2='Crashes Observed'
       />
     </div>
   )

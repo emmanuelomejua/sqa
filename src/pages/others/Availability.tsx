@@ -11,8 +11,8 @@ const Availability = () => {
         q3='Does 1 and 2 occur at specific times'
       />
       <Inputs
-        text1=''
-        text2=''
+        text1='Total Time in a month'
+        text2='Downtime Observed'
       />
     </div>
   )

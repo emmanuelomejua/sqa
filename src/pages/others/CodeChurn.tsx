@@ -11,8 +11,8 @@ const CodeChurn = () => {
         q3='Are there specific modules or components with higher code chrun'
       />
       <Inputs
-        text1=''
-        text2=''
+        text1='Total Lines of Code in the system'
+        text2='Changes in a release'
       />
     </div>
   )

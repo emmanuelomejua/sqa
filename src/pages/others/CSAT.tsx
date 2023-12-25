@@ -11,8 +11,8 @@ const CSAT = () => {
         q3='Are you okay with the system responsiveness?'
       />
       <Inputs
-        text1=''
-        text2=''
+        text1='Enter User rating on scale 1-5'
+        text2='No of times of system usage'
       />
     </div>
   )

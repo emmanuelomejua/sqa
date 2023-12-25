@@ -11,8 +11,8 @@ const DefectDensity = () => {
         q3='How effective are the processes in place?'
       />
       <Inputs
-        text1=''
-        text2=''
+        text1='Total Defects Idenified'
+        text2='total Lines of Code'
       />
     </div>
   )

@@ -1,5 +1,5 @@
 import './style.scss'
-import { Inputs, Question, Text } from '../../comps'
+import { Input1, Question, Text } from '../../comps'
 
 const MTTD = () => {
   return (
@@ -10,9 +10,8 @@ const MTTD = () => {
       q2='Are there automated processes for in place for early detection'
       q3='How effective is collaboration between development and testing team in identifying defects?'
     />
-    <Inputs
-      text1=''
-      text2=''
+    <Input1
+      text='Time from code change to issue detection'
     />
   </div>
   )
