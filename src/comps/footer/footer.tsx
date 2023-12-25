@@ -1,6 +1,6 @@
 import './footer.scss'
 
-const footer = () => {
+const Blog = () => {
   return (
     <div>
       Footer
@@ -8,4 +8,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Blog

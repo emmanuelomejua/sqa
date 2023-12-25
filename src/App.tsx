@@ -1,8 +1,8 @@
 import React from 'react'
 import './app.scss';
-import { Navbar, Footer, Sidebar } from './comps';
+import { Navbar, Sidebar } from './comps';
 import { Outlet, createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { Home, Login } from './pages';
+import { Home, Signin, Signup } from './pages';
 import { Availability, CSAT, CodeChurn, CrashRate, DefectDensity, MTBF, MTTR, MTTD } from './pages/others';
 
 
@@ -16,7 +16,6 @@ const Layout = () => {
       </section>
       <section className='app_container'>
       <Outlet/>
-      <Footer/>
       </section>
     </section>
   </section>
@@ -73,8 +72,12 @@ const router = createBrowserRouter([
   },
   {
     path: '/login',
-    element: <Login/>
-  }
+    element: <Signin/>
+  },
+  {
+    path: '/signup',
+    element: <Signup/>
+  },
 ])
 
 function App() {
