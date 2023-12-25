@@ -6,7 +6,7 @@ interface questionProps {
     q3: string
 }
 
-const Question: React.FC<questionProps> = () => {
+const Question: React.FC<questionProps> = ({q1, q2, q3}) => {
   return (
     <div className='question'>
                 <label htmlFor='inputs'/>
@@ -24,7 +24,7 @@ const Question: React.FC<questionProps> = () => {
 
         <tbody>
             <tr>
-                <td>1. How often do you experience crashes or unexpected termination? </td>
+                <td>1. {q1} </td>
                 <td><input type="radio" className="" id='inputs'/></td>
                 <td><input type="radio" className="" id='inputs'/></td>
                 <td><input type="radio" className="" id='inputs'/></td>
@@ -32,7 +32,7 @@ const Question: React.FC<questionProps> = () => {
                 <td><input type="radio" className="" id='inputs'/></td>
             </tr>
             <tr>
-                <td>2. How many scenerios do you think can lead to crashes? </td>
+                <td>2. {q2} </td>
                 <td><input type="radio" className="" id='inputs'/></td>
                 <td><input type="radio" className="" id='inputs'/></td>
                 <td><input type="radio" className="" id='inputs'/></td>
@@ -40,7 +40,7 @@ const Question: React.FC<questionProps> = () => {
                 <td><input type="radio" className="" id='inputs'/></td>
             </tr>
             <tr>
-                <td>3. How severe is the impact of crashes on your experience? </td>
+                <td>3. {q3} </td>
                 <td><input type="radio" className="" id='inputs'/></td>
                 <td><input type="radio" className="" id='inputs'/></td>
                 <td><input type="radio" className="" id='inputs'/></td>

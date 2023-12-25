@@ -6,9 +6,9 @@ const MTTD = () => {
     <div className='styles'>
     <Text p='Please provide information about the system Mean Time To Detect faults' h4='MTTD CALCULATOR'/>
     <Question
-      q1=''
-      q2=''
-      q3=''
+      q1='How quickly are issues or defects identified?'
+      q2='Are there automated processes for in place for early detection'
+      q3='How effective is collaboration between development and testing team in identifying defects?'
     />
     <Inputs/>
   </div>

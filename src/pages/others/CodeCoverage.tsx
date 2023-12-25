@@ -6,9 +6,9 @@ const CodeCoverage = () => {
     <div className='styles'>
       <Text p='Please provide information about systems code coverage' h4='Code coverage calculator'/>
       <Question
-        q1=''
-        q2=''
-        q3=''
+        q1='How effective are the unit tests conducted for code changes?'
+        q2='Are there many components with low test coverage?'
+        q3='Are numerous tools required to ensure comprehensive code coverage?'
       />
       <Inputs/>
     </div>
