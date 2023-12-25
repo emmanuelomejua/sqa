@@ -1,11 +1,12 @@
 import './style.scss'
-import { Question, Text } from '../../comps'
+import { Inputs, Question, Text } from '../../comps'
 
 const CrashRate = () => {
   return (
     <div className='styles'>
       <Text/>
       <Question/>
+      <Inputs/>
     </div>
   )
 }
