@@ -1,9 +1,10 @@
-import React from 'react'
+import './style.scss'
+import { Text } from '../../comps'
 
 const CrashRate = () => {
   return (
-    <div>
-      Code Churn
+    <div className='styles'>
+      <Text/>
     </div>
   )
 }

@@ -82,7 +82,11 @@ const Sidebar:FC = () => {
 
       </ul>
       <div className="s-bottom">
-        Logout
+        <span>
+          <ExitToApp/>
+        </span>
+        <p>Logout</p>
+       
       </div>
     </div>
   )
