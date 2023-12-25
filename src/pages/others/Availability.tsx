@@ -10,7 +10,10 @@ const Availability = () => {
         q2='Do system unavailability encoutered impact workflow?'
         q3='Does 1 and 2 occur at specific times'
       />
-      <Inputs/>
+      <Inputs
+        text1=''
+        text2=''
+      />
     </div>
   )
 }

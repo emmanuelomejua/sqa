@@ -10,7 +10,10 @@ const MTBF = () => {
         q2='Are there common causes of system failures?'
         q3='How quickly are issues resolved once detected?'
       />
-      <Inputs/>
+      <Inputs
+        text1=''
+        text2=''
+      />
     </div>
   )
 }

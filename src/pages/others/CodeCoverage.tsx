@@ -10,7 +10,10 @@ const CodeCoverage = () => {
         q2='Are there many components with low test coverage?'
         q3='Are numerous tools required to ensure comprehensive code coverage?'
       />
-      <Inputs/>
+      <Inputs
+        text1=''
+        text2=''
+      />
     </div>
   )
 }

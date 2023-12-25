@@ -10,7 +10,10 @@ const CodeChurn = () => {
         q2='Do many factors contribute to code changes?'
         q3='Are there specific modules or components with higher code chrun'
       />
-      <Inputs/>
+      <Inputs
+        text1=''
+        text2=''
+      />
     </div>
   )
 }

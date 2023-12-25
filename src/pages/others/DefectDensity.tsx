@@ -10,7 +10,10 @@ const DefectDensity = () => {
         q2='Are there specific modules or components with higher defects?'
         q3='How effective are the processes in place?'
       />
-      <Inputs/>
+      <Inputs
+        text1=''
+        text2=''
+      />
     </div>
   )
 }

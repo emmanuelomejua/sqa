@@ -10,7 +10,10 @@ const CSAT = () => {
         q2='Are there many dissatifying features?'
         q3='Are you okay with the system responsiveness?'
       />
-      <Inputs/>
+      <Inputs
+        text1=''
+        text2=''
+      />
     </div>
   )
 }

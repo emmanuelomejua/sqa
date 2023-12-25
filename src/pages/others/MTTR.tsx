@@ -10,7 +10,10 @@ const MTTR = () => {
         q2='Are there specific challenges or bottleneck in the resolution process?'
         q3='Do downtime often occur during resolution?'
       />
-      <Inputs/>
+      <Inputs
+        text1=''
+        text2=''
+      />
     </div>
   )
 }

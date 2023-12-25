@@ -10,7 +10,10 @@ const MTTD = () => {
       q2='Are there automated processes for in place for early detection'
       q3='How effective is collaboration between development and testing team in identifying defects?'
     />
-    <Inputs/>
+    <Inputs
+      text1=''
+      text2=''
+    />
   </div>
   )
 }
