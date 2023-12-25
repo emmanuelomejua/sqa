@@ -1,5 +1,5 @@
 import './sidebar.scss';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Dashboard, InsertChartOutlinedOutlined, ExitToApp, BarChartOutlined, StackedLineChartOutlined, CheckCircleOutline, Contrast, FilterHdr, Recycling } from '@mui/icons-material'
 import { Link } from 'react-router-dom';
 
