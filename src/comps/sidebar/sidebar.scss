@@ -3,14 +3,37 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-right: 1px solid gray;
+    border-right: 1px solid rgba(128, 128, 128, 0.342);
     padding: 10px;
+    color: #fff;
+    // color:  #504a4a;
+    // color: #888;
+
+    .s-top{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        .span{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            padding: 0px 5px;
+            font-weight: 500;
+
+            &:hover{
+                color: #fff;
+                background-color: #03063b;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .s-bottom{
+        margin-bottom: 10px;
+
+
+    }
 }
 
-.s-top{
-
-}
-
-.s-bottom{
-    margin-bottom: 10px;
-}

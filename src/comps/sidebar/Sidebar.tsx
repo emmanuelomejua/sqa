@@ -1,76 +1,85 @@
-import './sidebar.scss'
+import './sidebar.scss';
+import React, { FC } from 'react';
+import { Dashboard, InsertChartOutlinedOutlined, ExitToApp, BarChartOutlined, StackedLineChartOutlined, CheckCircleOutline, Contrast, FilterHdr, Recycling } from '@mui/icons-material'
+import { Link } from 'react-router-dom';
 
 const links = [
   {
     id: 0,
     url: '/',
     title: 'Home',
-    icon: ''
+    icon: <Dashboard/>
   },
   {
     id: 1,
     url: '/codechurn',
     title: 'Code Churn',
-    icon: ''
+    icon: <InsertChartOutlinedOutlined/>
   },
   {
     id: 2,
     url: '/crashrate',
     title: 'Crash Rate',
-    icon: ''
+    icon: <BarChartOutlined/>
   },
   {
     id: 3,
     url: '/availability',
     title: 'Availability',
-    icon: ''
+    icon: <FilterHdr/>
   },
   {
     id: 4,
     url: '/ddensity',
     title: 'Defect Density',
-    icon: ''
+    icon: <FilterHdr/>
   },
   {
     id: 5,
     url: '/mttd',
     title: 'MTTD',
-    icon: ''
+    icon: <FilterHdr/>
   },
   {
     id: 6,
     url: '/mtbf',
     title: 'MTBF',
-    icon: ''
+    icon: <CheckCircleOutline/>
   },
   {
     id: 7,
     url: '/mttr',
     title: 'MTTR',
-    icon: ''
+    icon: <StackedLineChartOutlined/>
   },
   {
     id: 8,
     url: '/csat',
     title: 'Customer Satifaction',
-    icon: ''
+    icon: <Contrast/>
   },
   {
     id: 9,
     url: '/ccoverage',
     title: 'Code Coverage',
-    icon: ''
+    icon: <Recycling/>
   }
 ]
 
-const Sidebar = () => {
+const Sidebar:FC = () => {
   return (
     <div className='sidebar'>
       <ul className="s-top">
-        <span>
-          <p></p>
-          <span></span>
-        </span>
+        {
+          links.map((link) => (
+          <Link to={link.url} className='link span'>
+            <span>{link.icon}</span>
+            <p>{link.title}</p>
+          </Link>
+
+          ))
+        }
+
       </ul>
       <div className="s-bottom">
         Logout
