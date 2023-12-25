@@ -1,9 +1,16 @@
-import React from 'react'
+import './style.scss'
+import { Inputs, Question, Text } from '../../comps'
 
 const MTBF = () => {
   return (
-    <div>
-      Code Churn
+    <div className='styles'>
+      <Text p='Please provide information about the system Mean Time Between Failures' h4='MTBF CALCULATOR'/>
+      <Question
+        q1=''
+        q2=''
+        q3=''
+      />
+      <Inputs/>
     </div>
   )
 }

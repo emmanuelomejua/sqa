@@ -1,6 +1,12 @@
 import './question.scss'
 
-const Question = () => {
+interface questionProps {
+    q1: string;
+    q2: string;
+    q3: string
+}
+
+const Question: React.FC<questionProps> = () => {
   return (
     <div className='question'>
                 <label htmlFor='inputs'/>
