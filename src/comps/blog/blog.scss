@@ -3,12 +3,12 @@
     flex-direction: column;
     margin: 15px;
     gap: 10px;
+    cursor: pointer;
 
     img{
         height: 165px;
         width: 200px;
         border-radius: 10px;
-        cursor: pointer;
     }
 
     .article-down{

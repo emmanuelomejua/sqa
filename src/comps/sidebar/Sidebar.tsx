@@ -1,6 +1,6 @@
 import './sidebar.scss';
 import { FC } from 'react';
-import { Dashboard, InsertChartOutlinedOutlined, ExitToApp, BarChartOutlined, StackedLineChartOutlined, CheckCircleOutline, Contrast, FilterHdr, Recycling } from '@mui/icons-material'
+import { Dashboard, InsertChartOutlinedOutlined, ExitToApp, BarChartOutlined, StackedLineChartOutlined, CheckCircleOutline, Contrast, FilterHdr, Recycling,  } from '@mui/icons-material'
 import { Link } from 'react-router-dom';
 
 const links = [
