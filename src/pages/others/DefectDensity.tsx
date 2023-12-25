@@ -12,7 +12,7 @@ const DefectDensity = () => {
       />
       <Inputs
         text1='Total Defects Idenified'
-        text2='total Lines of Code'
+        text2='Total Lines of Code'
       />
     </div>
   )

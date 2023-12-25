@@ -5,7 +5,8 @@ import CSAT from "./CSAT";
 import DefectDensity from "./DefectDensity";
 import MTBF from "./MTBF";
 import MTTR from "./MTTR";
-import MTTD from './MTTD'
+import MTTD from './MTTD';
+import CodeCoverage from "./CodeCoverage";
 
 export {
     Availability,
@@ -15,5 +16,6 @@ export {
     DefectDensity,
     MTBF,
     MTTR,
-    MTTD
+    MTTD,
+    CodeCoverage
 }
