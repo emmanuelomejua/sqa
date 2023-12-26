@@ -3,6 +3,8 @@ import { Botton } from '../index'
 import { Link } from 'react-router-dom'
 
 const navbar = () => {
+
+  const user = false;
   return (
     <nav className='navbar'>
       <section className='navbar-cont'>
@@ -13,13 +15,17 @@ const navbar = () => {
         <div className="navbar-right">
           <h2>SQA CHECKER</h2>
           <div>
-            <Link to='/login' className='n-link'>
-               <Botton text='LOGIN' />
-            </Link>
+            { !user &&
+              <>
+                <Link to='/login' className='n-link'>
+                  <Botton text='LOGIN' />
+                </Link>
 
-            <Link to='/signup' className='n-link'>
-               <Botton text='SIGN UP'/>
-            </Link>
+                <Link to='/signup' className='n-link'>
+                  <Botton text='SIGN UP'/>
+                </Link>
+              </>
+            }
             <img src='/person.jpg' alt='person' height='50px' className='n-img'/>
             <span>Okojie Michael</span>
           </div>
