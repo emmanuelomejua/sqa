@@ -30,7 +30,8 @@ const Availability = () => {
         setDefectDensity={() => {}}
         setCrashRate={() => {}}
       />
-      <Result result={result} msg={result >= 90 ? `The System Availabilty is ${result}, meeting the required threshold` : 'This is not okay, pls optimize system availability'}/>
+        {result &&
+        <Result result={result} msg={result >= 90 ? `The System Availabilty is ${result}, meeting the required threshold` : 'This is not okay, pls optimize system availability'}/>}
     </div>
   )
 }

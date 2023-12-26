@@ -19,7 +19,8 @@ const MTTD = () => {
       setMttr={() => {}}
     />
 
-    <Result result={mttd} msg={mttd <= 3 ? `The MTTD is ${mttd}, meeting the required threshold` : 'This is not okay, pls improve on this!'}/>
+    {mttd &&
+      <Result result={mttd} msg={mttd <= 3 ? `The MTTD is ${mttd}, meeting the required threshold` : 'This is not okay, pls improve on this!'}/>}
   </div>
   )
 }

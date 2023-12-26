@@ -25,7 +25,8 @@ const CodeCoverage = () => {
         setCrashRate={() => {}}
       />
 
-      <Result result={codeCoverage} msg={codeCoverage >= 80 ? `The Code Coverage is ${codeCoverage}, meeting the required threshold` : 'This is not okay, pls optimize system code coverage'}/>
+    {  codeCoverage &&
+    <Result result={codeCoverage} msg={codeCoverage >= 80 ? `The Code Coverage is ${codeCoverage}, meeting the required threshold` : 'This is not okay, pls optimize system code coverage'}/>}
     </div>
   )
 }

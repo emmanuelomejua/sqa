@@ -5,6 +5,9 @@ import { Inputs, Question, Result, Text } from '../../comps'
 const CodeChurn = () => {
 
   const [codeChrun, setCodeChrun] = useState<number>(0)
+
+
+  // let message = ''
   return (
     <div className='styles'>
       <Text p='Please provide information about the code chrun' h4='Code chrun calculator'/>
@@ -25,7 +28,9 @@ const CodeChurn = () => {
         setCrashRate={() => {}}
       />
 
-      <Result result={codeChrun} msg={codeChrun >= 80 ? `The System Availabilty is ${codeChrun}, meeting the required threshold` : 'This is not okay, pls optimize code chrun'}/>
+     { codeChrun &&
+     <Result result={codeChrun} msg={codeChrun >= 80 ? `The System Availabilty is ${codeChrun}, meeting the required threshold` : 'This is not okay, pls optimize code chrun'}/>
+     }
     </div>
   )
 }
