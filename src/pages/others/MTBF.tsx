@@ -1,5 +1,5 @@
 import './style.scss'
-import { Inputs, Question, Text } from '../../comps'
+import { Inputs, Question, Result, Text } from '../../comps'
 
 const MTBF = () => {
   return (
@@ -14,6 +14,8 @@ const MTBF = () => {
         text1='Total hours in a month'
         text2='No of Failures Observed'
       />
+
+      <Result result={0} msg=''/>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import './style.scss'
-import { Input1, Question, Text } from '../../comps'
+import { Input1, Question, Result, Text } from '../../comps'
 
 const MTTD = () => {
   return (
@@ -13,6 +13,8 @@ const MTTD = () => {
     <Input1
       text='Time from code change to issue detection'
     />
+
+    <Result result={0} msg=''/>
   </div>
   )
 }

@@ -1,5 +1,5 @@
 import './style.scss'
-import { Inputs, Question, Text } from '../../comps'
+import { Inputs, Question, Result, Text } from '../../comps'
 
 const CodeChurn = () => {
   return (
@@ -14,6 +14,8 @@ const CodeChurn = () => {
         text1='Total Lines of Code in the system'
         text2='Changes in a release'
       />
+
+      <Result result={0} msg=''/>
     </div>
   )
 }

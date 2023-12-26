@@ -1,5 +1,5 @@
 import './style.scss'
-import { Inputs, Question, Text } from '../../comps'
+import { Inputs, Question, Result, Text } from '../../comps'
 
 
 const CrashRate: React.FC = () => {
@@ -15,6 +15,8 @@ const CrashRate: React.FC = () => {
         text1='Total User session'
         text2='Crashes Observed'
       />
+
+      <Result result={0} msg=''/>
     </div>
   )
 }

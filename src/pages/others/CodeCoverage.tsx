@@ -1,5 +1,5 @@
 import './style.scss'
-import { Inputs, Question, Text } from '../../comps'
+import { Inputs, Question, Result, Text } from '../../comps'
 
 const CodeCoverage = () => {
   return (
@@ -14,6 +14,8 @@ const CodeCoverage = () => {
         text1='LOC covered by unit tests'
         text2='Total Lines of Code'
       />
+
+      <Result result={0} msg=''/>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import './style.scss'
-import { Inputs, Question, Text } from '../../comps'
+import { Inputs, Question, Result, Text } from '../../comps'
 
 const CSAT = () => {
   return (
@@ -14,6 +14,8 @@ const CSAT = () => {
         text1='Enter User Rating on Scale 1-5'
         text2='No of Times of System Usage'
       />
+
+      <Result result={0} msg=''/>
     </div>
   )
 }

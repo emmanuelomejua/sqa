@@ -1,5 +1,5 @@
 import './style.scss'
-import { Inputs, Question, Text } from '../../comps'
+import { Inputs, Question, Result, Text } from '../../comps'
 
 const DefectDensity = () => {
   return (
@@ -14,6 +14,8 @@ const DefectDensity = () => {
         text1='Total Defects Idenified'
         text2='Total Lines of Code'
       />
+
+      <Result result={0} msg=''/>
     </div>
   )
 }

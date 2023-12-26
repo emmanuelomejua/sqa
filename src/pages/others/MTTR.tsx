@@ -1,5 +1,5 @@
 import './style.scss'
-import { Input1, Question, Text } from '../../comps'
+import { Input1, Question, Result, Text } from '../../comps'
 
 const MTTR = () => {
   return (
@@ -13,6 +13,8 @@ const MTTR = () => {
       <Input1
         text='Time Taken to Resolve Issues'
       />
+
+      <Result result={0} msg=''/>
     </div>
   )
 }
