@@ -1,7 +1,10 @@
 import './style.scss'
 import { Inputs, Question, Result, Text } from '../../comps'
+import { useState } from 'react'
 
 const DefectDensity = () => {
+
+  const [defectDensity, setDefectDensity] = useState<number>(0)
   return (
     <div className='styles'>
       <Text p='Please provide information about the system defects density' h4='DEFECT DENSITY CALCULATOR'/>
@@ -17,9 +20,12 @@ const DefectDensity = () => {
         setCodeChrun={() => {}}
         setCodeCoverage={() => {}}
         setCsat={() => {}}
+        setDefectDensity={setDefectDensity}
+        setMtbf={() => {}}
+        setCrashRate={() => {}}
       />
 
-      <Result result={0} msg=''/>
+      <Result result={defectDensity} msg=''/>
     </div>
   )
 }

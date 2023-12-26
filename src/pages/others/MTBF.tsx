@@ -1,7 +1,10 @@
 import './style.scss'
 import { Inputs, Question, Result, Text } from '../../comps'
+import { useState } from 'react'
 
 const MTBF = () => {
+
+  const [mtbf, setMtbf] = useState<number>(0)
   return (
     <div className='styles'>
       <Text p='Please provide information about the system Mean Time Between Failures' h4='MTBF CALCULATOR'/>
@@ -17,9 +20,12 @@ const MTBF = () => {
         setCodeChrun={() => {}}
         setCodeCoverage={() => {}}
         setCsat={() => {}}
+        setMtbf={setMtbf}
+        setDefectDensity={() => {}}
+        setCrashRate={() => {}}
       />
 
-      <Result result={0} msg=''/>
+      <Result result={mtbf} msg=''/>
     </div>
   )
 }

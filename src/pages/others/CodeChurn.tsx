@@ -20,6 +20,9 @@ const CodeChurn = () => {
         setCodeChrun={setCodeChrun}
         setCodeCoverage={() => {}}
         setCsat={() => {}}
+        setMtbf={() => {}}
+        setDefectDensity={() => {}}
+        setCrashRate={() => {}}
       />
 
       <Result result={codeChrun} msg=''/>

@@ -9,20 +9,34 @@ interface inputProps {
   setCodeChrun: Dispatch<SetStateAction<number>>;
   setCodeCoverage:Dispatch<SetStateAction<number>>;
   setCsat:Dispatch<SetStateAction<number>>;
+  setCrashRate:Dispatch<SetStateAction<number>>;
+  setDefectDensity:Dispatch<SetStateAction<number>>;
+  setMtbf:Dispatch<SetStateAction<number>>;
 }
 
-const Inputs: React.FC<inputProps> = ({ text1, text2, setResult, setCodeChrun, setCodeCoverage, setCsat }) => {
+const Inputs: React.FC<inputProps> = ({ text1, text2, setResult, setCodeChrun, setCodeCoverage, setCsat, setCrashRate, setDefectDensity, setMtbf }) => {
   
   const [firstInput, setFirstInput] = useState<number>(0)
   const [secondInput, setSecondInnput] = useState<number>(0)
 
 
+  let availability = ((firstInput - secondInput)/secondInput) * 100;
+  let codechrunValue = (firstInput/secondInput) * 100;
+  let csatValue = (firstInput * secondInput)/5;
+  let codeCoverageValue = (firstInput/secondInput) * 100;
+  let crashRateValue = (firstInput/secondInput) * 100;
+  let defectValue = (firstInput/secondInput);
+  let mtbfValue = (firstInput/secondInput);
+
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault()
-    setResult(firstInput * secondInput);
-    setCodeChrun(firstInput + secondInput);
-    setCsat(firstInput + secondInput);
-    setCodeCoverage(firstInput * secondInput);
+    setResult(availability);
+    setCodeChrun(codechrunValue);
+    setCsat(csatValue);
+    setCodeCoverage(codeCoverageValue);
+    setCrashRate(crashRateValue)
+    setDefectDensity(defectValue);
+    setMtbf(mtbfValue)
   }
 
 

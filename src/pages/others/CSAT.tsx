@@ -20,6 +20,9 @@ const CSAT = () => {
         setCodeChrun={() => {}}
         setCodeCoverage={() => {}}
         setCsat={setCsat}
+        setMtbf={() => {}}
+        setDefectDensity={() => {}}
+        setCrashRate={() => {}}
       />
 
       <Result result={csat} msg=''/>

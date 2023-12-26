@@ -1,8 +1,11 @@
 import './style.scss'
+import { useState } from 'react'
 import { Inputs, Question, Result, Text } from '../../comps'
 
 
 const CrashRate: React.FC = () => {
+
+  const [crashRate, setCrashRate] = useState<number>(0)
   return (
     <div className='styles'>
       <Text p='Please provide information about your system crashes' h4='CRASH RATE INSPECTOR'/>
@@ -18,9 +21,12 @@ const CrashRate: React.FC = () => {
         setCodeChrun={() => {}}
         setCodeCoverage={() => {}}
         setCsat={() => {}}
+        setCrashRate={setCrashRate}
+        setMtbf={() => {}}
+        setDefectDensity={() => {}}
       />
 
-      <Result result={0} msg=''/>
+      <Result result={crashRate} msg=''/>
     </div>
   )
 }

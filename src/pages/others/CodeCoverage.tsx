@@ -20,6 +20,9 @@ const CodeCoverage = () => {
         setCodeChrun={() => {}}
         setCsat={() => {}}
         setCodeCoverage={setCodeCoverage}
+        setMtbf={() => {}}
+        setDefectDensity={() => {}}
+        setCrashRate={() => {}}
       />
 
       <Result result={codeCoverage} msg=''/>

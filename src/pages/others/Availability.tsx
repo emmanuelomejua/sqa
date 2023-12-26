@@ -26,8 +26,11 @@ const Availability = () => {
         setResult={setResult}
         setCodeCoverage={() => {}}
         setCsat={() => {}}
+        setMtbf={() => {}}
+        setDefectDensity={() => {}}
+        setCrashRate={() => {}}
       />
-      <Result result={result} msg=''/>
+      <Result result={result} msg='This is the Availabilty value'/>
     </div>
   )
 }
