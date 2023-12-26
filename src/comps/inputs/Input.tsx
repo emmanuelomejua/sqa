@@ -1,4 +1,5 @@
-import './input.scss'
+import './input.scss';
+import { Botton } from '../index'
 
 interface inputProps {
   text1: string;
@@ -18,7 +19,7 @@ const Inputs:React.FC<inputProps> = ({text1, text2}) => {
         <input type="number" name='id' min={0} placeholder='Enter Valid Integer'/>
       </section>
 
-      <button>SUBMIT</button>
+      <Botton text='SUBMIT'/>
     </form>
   )
 }
