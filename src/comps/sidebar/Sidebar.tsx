@@ -74,7 +74,7 @@ const Sidebar:FC = () => {
       <ul className="s-top">
         {
           links.map((link) => (
-          <Link to={link.url} className='link span'>
+          <Link to={link.url} key={link.id} className='link span'>
             <span>{link.icon}</span>
             <p>{link.title}</p>
           </Link>

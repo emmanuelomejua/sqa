@@ -6,6 +6,7 @@ import Inputs from './inputs/Input';
 import Blog from './blog/Blog';
 import Input1 from './inputs/Input1';
 import Botton from './button/Botton';
+import Result from './results/Result';
 
 export {
     Navbar,
@@ -15,5 +16,6 @@ export {
     Inputs,
     Blog,
     Input1,
-    Botton
+    Botton,
+    Result
 }

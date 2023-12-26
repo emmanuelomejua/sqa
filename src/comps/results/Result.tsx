@@ -1,9 +1,22 @@
-import React from 'react'
+import { FC } from "react";
+import "./result.scss"
 
-const Result = () => {
+interface resultProps {
+  result: number;
+  msg: string
+}
+
+const Result:FC<resultProps> = ({result, msg}) => {
   return (
-    <div>
-      
+    <div className="results">
+      <div>
+        <h4>Result:</h4>
+        <span>{result}</span>
+      </div>
+      <div>
+      <h4>Message:</h4>
+      <span>{msg}</span>
+      </div>
     </div>
   )
 }

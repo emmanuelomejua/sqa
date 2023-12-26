@@ -1,13 +1,13 @@
 import './botton.scss'
-import { FC } from 'react'
+import { FC, ButtonHTMLAttributes } from 'react'
 
 type btn = {
     text: string
-}
+}& ButtonHTMLAttributes<HTMLButtonElement>
 
-const Botton:FC<btn> = ({text}) => {
+const Botton:FC<btn> = ({text, onClick}) => {
   return (
-    <button className='botton'>{text}</button>
+    <button className='botton'  onClick={onClick}>{text}</button>
   )
 }
 

@@ -27,27 +27,27 @@ const Question: React.FC<questionProps> = ({q1, q2, q3}) => {
         <tbody>
             <tr>
                 <td>1. {q1} </td>
-                <td><input type="radio" name='inputs'/></td>
-                <td><input type="radio" name='inputs'/></td>
-                <td><input type="radio" name='inputs'/></td>
-                <td><input type="radio" name='inputs'/></td>
-                <td><input type="radio" name='inputs'/></td>
+                <td><input type="radio" name='inputs' required/></td>
+                <td><input type="radio" name='inputs' required/></td>
+                <td><input type="radio" name='inputs' required/></td>
+                <td><input type="radio" name='inputs' required/></td>
+                <td><input type="radio" name='inputs' required/></td>
             </tr>
             <tr>
                 <td>2. {q2} </td>
-                <td><input type="radio" name='input1'/></td>
-                <td><input type="radio" name='input1'/></td>
-                <td><input type="radio" name='input1'/></td>
-                <td><input type="radio" name='input1'/></td>
-                <td><input type="radio" name='input1'/></td>
+                <td><input type="radio" name='input1' required/></td>
+                <td><input type="radio" name='input1' required/></td>
+                <td><input type="radio" name='input1' required/></td>
+                <td><input type="radio" name='input1' required/></td>
+                <td><input type="radio" name='input1' required/></td>
             </tr>
             <tr>
                 <td>3. {q3} </td>
-                <td><input type="radio" name='input2'/></td>
-                <td><input type="radio" name='input2'/></td>
-                <td><input type="radio" name='input2'/></td>
-                <td><input type="radio" name='input2'/></td>
-                <td><input type="radio" name='input2'/></td>
+                <td><input type="radio" name='input2' required/></td>
+                <td><input type="radio" name='input2' required/></td>
+                <td><input type="radio" name='input2' required/></td>
+                <td><input type="radio" name='input2' required/></td>
+                <td><input type="radio" name='input2' required/></td>
             </tr>
 
         </tbody>

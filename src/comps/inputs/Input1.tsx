@@ -12,7 +12,7 @@ const Input1: React.FC<iProp> = ({text}) => {
             <label>{text}:</label>
             <input type="number" min={0} required placeholder='Enter Positive Integer'/>
         </section>
-        <Botton text='SUBMIT'/>
+        <Botton text='SUBMIT' />
     </form>
   )
 }
