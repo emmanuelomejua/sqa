@@ -13,6 +13,10 @@ const DefectDensity = () => {
       <Inputs
         text1='Total Defects Idenified'
         text2='Total Lines of Code'
+        setResult={() => {}}
+        setCodeChrun={() => {}}
+        setCodeCoverage={() => {}}
+        setCsat={() => {}}
       />
 
       <Result result={0} msg=''/>

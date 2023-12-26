@@ -14,6 +14,10 @@ const CrashRate: React.FC = () => {
       <Inputs
         text1='Total User session'
         text2='Crashes Observed'
+        setResult={() => {}}
+        setCodeChrun={() => {}}
+        setCodeCoverage={() => {}}
+        setCsat={() => {}}
       />
 
       <Result result={0} msg=''/>

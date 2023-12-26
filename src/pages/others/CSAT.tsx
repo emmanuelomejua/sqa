@@ -1,7 +1,10 @@
 import './style.scss'
 import { Inputs, Question, Result, Text } from '../../comps'
+import { useState } from 'react'
 
 const CSAT = () => {
+
+  const [csat, setCsat] = useState<number>(0)
   return (
     <div className='styles'>
       <Text p='Please provide information about your the customers satisfaction' h4='Customers satisfaction calculator'/>
@@ -13,9 +16,13 @@ const CSAT = () => {
       <Inputs
         text1='Enter User Rating on Scale 1-5'
         text2='No of Times of System Usage'
+        setResult={() => {}}
+        setCodeChrun={() => {}}
+        setCodeCoverage={() => {}}
+        setCsat={setCsat}
       />
 
-      <Result result={0} msg=''/>
+      <Result result={csat} msg=''/>
     </div>
   )
 }

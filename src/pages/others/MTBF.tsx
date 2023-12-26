@@ -13,6 +13,10 @@ const MTBF = () => {
       <Inputs
         text1='Total hours in a month'
         text2='No of Failures Observed'
+        setResult={() => {}}
+        setCodeChrun={() => {}}
+        setCodeCoverage={() => {}}
+        setCsat={() => {}}
       />
 
       <Result result={0} msg=''/>

@@ -1,7 +1,10 @@
 import './style.scss'
 import { Inputs, Question, Result, Text } from '../../comps'
+import { useState } from 'react'
 
 const CodeCoverage = () => {
+
+  const [codeCoverage, setCodeCoverage] = useState(0)
   return (
     <div className='styles'>
       <Text p='Please provide information about systems code coverage' h4='Code coverage calculator'/>
@@ -13,9 +16,13 @@ const CodeCoverage = () => {
       <Inputs
         text1='LOC covered by unit tests'
         text2='Total Lines of Code'
+        setResult={() => {}}
+        setCodeChrun={() => {}}
+        setCsat={() => {}}
+        setCodeCoverage={setCodeCoverage}
       />
 
-      <Result result={0} msg=''/>
+      <Result result={codeCoverage} msg=''/>
     </div>
   )
 }

@@ -1,7 +1,10 @@
 import './style.scss'
+import { useState } from 'react'
 import { Inputs, Question, Result, Text } from '../../comps'
 
 const CodeChurn = () => {
+
+  const [codeChrun, setCodeChrun] = useState<number>(0)
   return (
     <div className='styles'>
       <Text p='Please provide information about the code chrun' h4='Code chrun calculator'/>
@@ -13,9 +16,13 @@ const CodeChurn = () => {
       <Inputs
         text1='Total Lines of Code in the system'
         text2='Changes in a release'
+        setResult={() => {}}
+        setCodeChrun={setCodeChrun}
+        setCodeCoverage={() => {}}
+        setCsat={() => {}}
       />
 
-      <Result result={0} msg=''/>
+      <Result result={codeChrun} msg=''/>
     </div>
   )
 }

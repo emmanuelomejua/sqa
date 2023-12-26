@@ -1,7 +1,10 @@
 import './style.scss'
+import { useState } from 'react'
 import { Inputs, Question, Result, Text } from '../../comps'
 
 const Availability = () => {
+
+  const [result, setResult] = useState<number>(0);
 
 
   return (
@@ -19,8 +22,12 @@ const Availability = () => {
       <Inputs
         text1='Total Time in a month'
         text2='Downtime Observed'
+        setCodeChrun={() => {}}
+        setResult={setResult}
+        setCodeCoverage={() => {}}
+        setCsat={() => {}}
       />
-      <Result result={0} msg=''/>
+      <Result result={result} msg=''/>
     </div>
   )
 }
