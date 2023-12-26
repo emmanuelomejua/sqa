@@ -25,7 +25,7 @@ const CSAT = () => {
         setCrashRate={() => {}}
       />
 
-      <Result result={csat} msg={csat ? `The MTTD is ${csat}` : ''}/>
+      <Result result={csat} msg={csat >= 4.2 ? `The Customer Satifaction is ${csat}, meeting the required threshold` : 'This is not okay, pls optimize system reliablity to improve user experience'}/>
     </div>
   )
 }

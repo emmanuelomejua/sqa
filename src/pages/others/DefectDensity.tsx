@@ -25,7 +25,7 @@ const DefectDensity = () => {
         setCrashRate={() => {}}
       />
 
-      <Result result={defectDensity} msg={defectDensity ? `The MTTD is ${defectDensity}` : ''}/>
+      <Result result={defectDensity} msg={defectDensity < 1 ? `The quailty defect is ${defectDensity}, meeting the required threshold` : 'This is not okay, pls optimize system dependability to minimize defects'}/>
     </div>
   )
 }

@@ -19,7 +19,7 @@ const MTTR = () => {
         setMttd={() => {}}
       />
 
-      <Result result={mttr} msg={mttr ? `The MTTD is ${mttr}` : ''}/>
+      <Result result={mttr} msg={mttr <= 2 ? `The MTTR is ${mttr}, meeting the required threshold` : 'This is not okay, pls improve on this!'}/>
     </div>
   )
 }

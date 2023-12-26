@@ -25,7 +25,7 @@ const MTBF = () => {
         setCrashRate={() => {}}
       />
 
-      <Result result={mtbf} msg={mtbf ? `The MTTD is ${mtbf}` : ''}/>
+      <Result result={mtbf} msg={mtbf > 500 ? `The MTBF is ${mtbf}, meeting the required threshold` : 'This is not okay, pls improve system dependability to minimize failures'}/>
     </div>
   )
 }

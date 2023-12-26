@@ -25,7 +25,7 @@ const CodeChurn = () => {
         setCrashRate={() => {}}
       />
 
-      <Result result={codeChrun} msg=''/>
+      <Result result={codeChrun} msg={codeChrun >= 80 ? `The System Availabilty is ${codeChrun}, meeting the required threshold` : 'This is not okay, pls optimize code chrun'}/>
     </div>
   )
 }
