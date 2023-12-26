@@ -1,7 +1,10 @@
 import './style.scss'
 import { Input1, Question, Result, Text } from '../../comps'
+import { useState } from 'react'
 
 const MTTD = () => {
+
+  const [mttd, setMttd] = useState<number>(0)
   return (
     <div className='styles'>
     <Text p='Please provide information about the system Mean Time To Detect faults' h4='MTTD CALCULATOR'/>
@@ -12,9 +15,11 @@ const MTTD = () => {
     />
     <Input1
       text='Time from code change to issue detection'
+      setMttd={setMttd}
+      setMttr={() => {}}
     />
 
-    <Result result={0} msg=''/>
+    <Result result={mttd} msg={mttd ? `The MTTD is ${mttd}` : ''}/>
   </div>
   )
 }

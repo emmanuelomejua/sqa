@@ -30,7 +30,7 @@ const Availability = () => {
         setDefectDensity={() => {}}
         setCrashRate={() => {}}
       />
-      <Result result={result} msg='This is the Availabilty value'/>
+      <Result result={result} msg=''/>
     </div>
   )
 }

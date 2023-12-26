@@ -20,13 +20,13 @@ const Inputs: React.FC<inputProps> = ({ text1, text2, setResult, setCodeChrun, s
   const [secondInput, setSecondInnput] = useState<number>(0)
 
 
-  let availability = ((firstInput - secondInput)/secondInput) * 100;
-  let codechrunValue = (firstInput/secondInput) * 100;
+  let availability = Math.round(((firstInput - secondInput)/secondInput) * 100);
+  let codechrunValue = Math.round(firstInput/secondInput) * 100;
   let csatValue = (firstInput * secondInput)/5;
   let codeCoverageValue = (firstInput/secondInput) * 100;
-  let crashRateValue = (firstInput/secondInput) * 100;
-  let defectValue = (firstInput/secondInput);
-  let mtbfValue = (firstInput/secondInput);
+  let crashRateValue = Math.round((firstInput/secondInput) * 100);
+  let defectValue = Math.round(firstInput/secondInput);
+  let mtbfValue = Math.round(firstInput/secondInput);
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault()

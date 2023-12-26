@@ -11,7 +11,7 @@ const Result:FC<resultProps> = ({result, msg}) => {
     <div className="results">
       <div>
         <h4>Result:</h4>
-        <span>{result}</span>
+        <span>{result ? result : 'Please input valid figures' }</span>
       </div>
       <div>
       <h4>Message:</h4>

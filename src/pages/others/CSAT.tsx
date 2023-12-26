@@ -25,7 +25,7 @@ const CSAT = () => {
         setCrashRate={() => {}}
       />
 
-      <Result result={csat} msg=''/>
+      <Result result={csat} msg={csat ? `The MTTD is ${csat}` : ''}/>
     </div>
   )
 }

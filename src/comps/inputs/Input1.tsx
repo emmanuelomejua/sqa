@@ -1,19 +1,22 @@
 import './input.scss'
 import { Botton } from '../index'
-import { useState } from 'react'
+import { useState, Dispatch, SetStateAction } from 'react'
 
 
 interface iProp {
-    text: string
+    text: string;
+    setMttr: Dispatch<SetStateAction<number>>;
+    setMttd: Dispatch<SetStateAction<number>>;
 }
 
 
-const Input1: React.FC<iProp> = ({text}) => {
+const Input1: React.FC<iProp> = ({text, setMttd, setMttr}) => {
   const [inputs, setInputs] = useState(0)
 
   const handleClick = (e:any) => {
     e.preventDefault()
-    console.log(inputs)
+    setMttr(inputs);
+    setMttd(inputs)
   }
 
   return (

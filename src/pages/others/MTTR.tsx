@@ -1,7 +1,10 @@
 import './style.scss'
 import { Input1, Question, Result, Text } from '../../comps'
+import { useState } from 'react'
 
 const MTTR = () => {
+
+  const [mttr, setMttr] = useState<number>(0)
   return (
     <div className='styles'>
       <Text p='Please provide information about the system Mean Time To Resolve issues' h4='MTTR CALCULATOR'/>
@@ -12,9 +15,11 @@ const MTTR = () => {
       />
       <Input1
         text='Time Taken to Resolve Issues'
+        setMttr={setMttr}
+        setMttd={() => {}}
       />
 
-      <Result result={0} msg=''/>
+      <Result result={mttr} msg={mttr ? `The MTTD is ${mttr}` : ''}/>
     </div>
   )
 }

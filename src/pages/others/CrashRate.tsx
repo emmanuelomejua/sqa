@@ -26,7 +26,7 @@ const CrashRate: React.FC = () => {
         setDefectDensity={() => {}}
       />
 
-      <Result result={crashRate} msg=''/>
+      <Result result={crashRate} msg={crashRate ? `The MTTD is ${crashRate}` : ''}/>
     </div>
   )
 }

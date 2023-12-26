@@ -25,7 +25,7 @@ const MTBF = () => {
         setCrashRate={() => {}}
       />
 
-      <Result result={mtbf} msg=''/>
+      <Result result={mtbf} msg={mtbf ? `The MTTD is ${mtbf}` : ''}/>
     </div>
   )
 }

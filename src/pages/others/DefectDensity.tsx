@@ -25,7 +25,7 @@ const DefectDensity = () => {
         setCrashRate={() => {}}
       />
 
-      <Result result={defectDensity} msg=''/>
+      <Result result={defectDensity} msg={defectDensity ? `The MTTD is ${defectDensity}` : ''}/>
     </div>
   )
 }
