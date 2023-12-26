@@ -5,6 +5,7 @@ import Question from './question/Question';
 import Inputs from './inputs/Input';
 import Blog from './blog/Blog';
 import Input1 from './inputs/Input1';
+import Botton from './button/Botton';
 
 export {
     Navbar,
@@ -13,5 +14,6 @@ export {
     Question,
     Inputs,
     Blog,
-    Input1
+    Input1,
+    Botton
 }

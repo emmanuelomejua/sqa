@@ -67,6 +67,8 @@ const links = [
 ]
 
 const Sidebar:FC = () => {
+
+  const user = false
   return (
     <div className='sidebar'>
       <ul className="s-top">
@@ -81,10 +83,13 @@ const Sidebar:FC = () => {
         }
 
       </ul>
-      <div className="s-bottom">
-        <ExitToApp/>
-        <p>Logout</p>
-      </div>
+      {
+        user &&
+        <div className="s-bottom">
+          <ExitToApp/>
+          <p>Logout</p>
+        </div>
+      }
     </div>
   )
 }
